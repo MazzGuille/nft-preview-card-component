@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-dark-blue-main-BG);
+    color: var(--White);
+    display: grid;
+    place-content: center;
+}
+
+.wrapper {
+    max-width: 90vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: var(--Very-dark-blue-card-BG);
+    border-radius: 1.6rem;
+}
+
+.card-container {
+    font-family: 'Outfit', sans-serif !important;
+    background-color: var(--Very-dark-blue-card-BG);
+    border-radius: 1.6rem;
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+.img-container {
+    position: relative;
+}
+
+
+.cube {
+    border-radius: 1.6rem;
+    width: 100%;
+}
+
+    .cube:hover {
+        transform: rotateY(180deg);
+    }
+
+
+.eye-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 1.6rem;
+    background-color: hsla(178, 100%, 50%, .5);
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 100;
+    opacity: 0;
+} 
+
+.eye {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.eye-container:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+        
+.card-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.card-title:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.card-text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--Soft-blue);
+
+}
+
+.mid-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.eth {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.eth img {
+    height: 80%;
+}
+
+.eth p {
+    color: var(--Cyan);
+}
+
+.clock {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+hr {
+    color: var(--Soft-blue);
+    margin-top: 2.5rem;
+}
+
+.avatar-pic {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar-pic img {
+    height: 4rem;
+    border: .2rem solid var(--White);
+    border-radius: 50%;
+}
+
+.avatar-pic p {
+    width: 80%;
+    color: var(--Soft-blue);
+    margin: 0;
+}
+
+.avatar-pic span {
+    color: white;
+}
+
+.avatar-pic span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+@media(min-width: 1020px) {
+    .wrapper {
+        width: 25vw;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+}
